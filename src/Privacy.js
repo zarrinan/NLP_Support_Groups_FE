@@ -12,8 +12,8 @@ export default class Privacy extends Component {
         <address>NLP Support Groups Finder</address>
         <p>It is NLP Support Groups Finder’s policy to respect your privacy
         regarding any information we may collect while operating our website.
-        This Privacy Policy applies to <a href="https://___/">https://___/</a>
-        (hereinafter, "us", "we", or "https://____/"). We respect your privacy
+        This Privacy Policy applies to https://nlpsupportgroupsfinder.firebaseapp.com/
+        (hereinafter, "us", "we", or "https://nlpsupportgroupsfinder.firebaseapp.com/"). We respect your privacy
         and are committed to protecting personally identifiable information you may
         provide us through the Website. We have adopted this privacy policy ("Privacy Policy")
         to explain what information may be collected on our Website, how we use this information,
@@ -33,14 +33,14 @@ export default class Privacy extends Component {
       may release non-personally-identifying information in the aggregate, e.g., by publishing a report on
       trends in the usage of its website.</p>
       <p>NLP Support Groups Finder also collects potentially personally-identifying information like Internet
-      Protocol (IP) addresses for logged in users and for users leaving comments on https://___/ blog posts.
+      Protocol (IP) addresses for logged in users and for users leaving comments on https://nlpsupportgroupsfinder.firebaseapp.com/ blog posts.
       NLP Support Groups Finder only discloses logged in user and commenter IP addresses under the same
       circumstances that it uses and discloses personally-identifying information as described below.</p>
             <h2>Gathering of Personally-Identifying Information</h2>
       <p>Certain visitors to NLP Support Groups Finder’s websites choose to interact with NLP Support Groups Finder
       in ways that require NLP Support Groups Finder to gather personally-identifying information.
       The amount and type of information that NLP Support Groups Finder gathers depends on the nature of
-      the interaction. For example, we ask visitors who sign up for a blog at https://____________/ to provide a
+      the interaction. For example, we ask visitors who sign up for a blog at https://nlpsupportgroupsfinder.firebaseapp.com/ to provide a
       username and email address.</p>
             <h2>Security</h2>
       <p>The security of your Personal Information is important to us, but remember that no method
@@ -64,7 +64,7 @@ export default class Privacy extends Component {
       <p>A cookie is a string of information that a website stores on a visitor’s computer, and that
       the visitor’s browser provides to the website each time the visitor returns. NLP Support Groups Finder
       uses cookies to help NLP Support Groups Finder identify and track visitors,
-      their usage of https://______/, and their website access preferences. NLP Support Groups Finder
+      their usage of https://nlpsupportgroupsfinder.firebaseapp.com/, and their website access preferences. NLP Support Groups Finder
       visitors who do not wish to have cookies placed on their computers should set their browsers
       to refuse cookies before using NLP Support Groups Finder’s websites, with the drawback that
       certain features of NLP Support Groups Finder’s websites may not function properly without
