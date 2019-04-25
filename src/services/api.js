@@ -18,7 +18,7 @@ const MODEL_URL = 'http://nlpsgf02-env.kx543mpwxe.us-east-2.elasticbeanstalk.com
 
 
 export default function fetchGroups() {
-    fetch('http://nlpsgf02-env.kx543mpwxe.us-east-2.elasticbeanstalk.com/')
+    axios.get(MODEL_URL)
     .then(response => response.json())
     .then(json => console.log(json))
   }

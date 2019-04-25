@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-import fakeUrl from './services/api'
-import fetchGroups from './services/api'
-
-let groups;
-groups = fetchGroups()
-console.log(groups)
-
-
+import axios from 'axios';
 
 
 class Form extends Component {
@@ -16,17 +9,11 @@ class Form extends Component {
 
     this.state = {
       text: '',
-      groups: []
+      groups: {}
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-
-  handleSubmit(ev) {
-    ev.preventDefault();
-    this.props.onSubmit(this.state.text);
   }
 
   handleChange(ev) {
@@ -36,8 +23,23 @@ class Form extends Component {
     });
   }
 
+
+  handleSubmit(ev) {
+    ev.preventDefault();
+    axios.post('http://nlpsgf02-env.kx543mpwxe.us-east-2.elasticbeanstalk.com/', {
+      text: this.state.text
+    })
+    .then(res => {
+      const groups = res.data
+      console.log(typeof groups);
+      this.setState({
+          groups
+      })
+    })
+    console.log(this.state)
+  }
+
   render() {
-    const { groups } = this.props;
 
     return (
       <div>
@@ -47,9 +49,9 @@ class Form extends Component {
           <input
             type="text"
             name="text"
-            value={this.state.text}
-            onChange={this.handleChange} />
-          <input type="submit" value="Submit Text" />
+            onChange={this.handleChange}
+            value={this.state.text}/>
+          <input type="submit" value="Submit" />
         </form>
       </div>
       </div>
