@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import Navigation from './Navigation'
 
 export default class Privacy extends Component {
   render() {
     return (
       <div>
-        <Navigation />
         <div className='privacy'>
         <h1>Welcome to our Privacy Policy</h1>
         <h3>Your privacy is critically important to us.</h3>

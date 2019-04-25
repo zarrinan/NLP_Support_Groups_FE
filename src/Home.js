@@ -1,12 +1,10 @@
 import React from 'react';
-import Navigation from './Navigation'
 
 export default class Home extends React.Component {
 
   render() {
     return (
       <div>
-        <Navigation />
         <h1 className='header-description'>NLP Support Groups Finder</h1>
         <p className='project-description'>This is a school Data Science project at the early development stage.
         The mission of the project is to help people with emotional issues to find

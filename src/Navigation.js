@@ -8,6 +8,7 @@ class Navigation extends Component {
       <div className='navContainer'>
         <ul>
           <li><Link className='link' to='/'>Home</Link></li>
+          <li><Link className='link' to='/form'>Form</Link></li>
           <li><Link className='link' to='/privacy'>Privacy Policy</Link></li>
         </ul>
       </div>
