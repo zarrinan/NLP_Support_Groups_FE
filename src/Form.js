@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import GroupsList from './GroupsList'
 
 
 class Form extends Component {
@@ -30,17 +31,15 @@ class Form extends Component {
       text: this.state.text
     })
     .then(res => {
-      const groups = res.data
-      console.log(typeof groups);
+      console.log(typeof res.data);
       this.setState({
-          groups
+          groups: res.data
       })
     })
-    console.log(this.state)
   }
 
   render() {
-
+    console.log(this.state)
     return (
       <div>
       <div className='privacy'>
@@ -53,6 +52,7 @@ class Form extends Component {
             value={this.state.text}/>
           <input type="submit" value="Submit" />
         </form>
+        <GroupsList groups={this.state.groups}/>
       </div>
       </div>
     );
