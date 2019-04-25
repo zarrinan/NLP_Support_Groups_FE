@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import fakeUrl from './services/api'
 import fetchGroups from './services/api'
 
+let groups;
+groups = fetchGroups()
+console.log(groups)
+
+
+
 
 class Form extends Component {
 
