@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import GroupsList from './GroupsList'
+import {MODEL_URL, DEV_URL} from './services/api'
 
 
 class Form extends Component {
@@ -27,7 +28,7 @@ class Form extends Component {
 
   handleSubmit(ev) {
     ev.preventDefault();
-    axios.post('http://nlpsgf02-env.kx543mpwxe.us-east-2.elasticbeanstalk.com/', {
+    axios.post(DEV_URL, {
       text: this.state.text
     })
     .then(res => {
@@ -42,15 +43,16 @@ class Form extends Component {
     console.log(this.state)
     return (
       <div>
-      <div className='privacy'>
-        <h2>Write a text</h2>
+      <div className='main-container'>
+        <h1 className='page-header'>Write a text</h1>
         <form onSubmit={this.handleSubmit} >
-          <input
+          <textarea
+            className="input-text"
             type="text"
             name="text"
             onChange={this.handleChange}
             value={this.state.text}/>
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" className="form-submit-button"/>
         </form>
         <GroupsList groups={this.state.groups}/>
       </div>

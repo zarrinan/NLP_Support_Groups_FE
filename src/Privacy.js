@@ -4,8 +4,8 @@ export default class Privacy extends Component {
   render() {
     return (
       <div>
-        <div className='privacy'>
-        <h1>Welcome to our Privacy Policy</h1>
+        <div className='main-container'>
+        <h1 className='page-header'>Welcome to our Privacy Policy</h1>
         <h3>Your privacy is critically important to us.</h3>
         <address>NLP Support Groups Finder</address>
         <p>It is NLP Support Groups Finder’s policy to respect your privacy

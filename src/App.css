@@ -1,3 +1,11 @@
+body {
+  background-color: #fffcfa;
+  color: #444749;
+  line-height: 1.6em;
+  font-size: 18px;
+
+}
+
 .App {
   text-align: center;
 }
@@ -17,24 +25,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  white-space: pre-wrap;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-.project-description {
+.main-container {
   margin: 0 auto;
   max-width: 800px;
+}
+
+.contributors-list {
+  padding-left: 0px;
 }
 
 .link {
@@ -66,6 +71,9 @@
 .header-description {
   margin: 50px auto;
   max-width: 800px;
+  font-family: 'Molengo', sans-serif;
+  font-weight: bold;
+  font-size: 46px;
 }
 
 
@@ -86,6 +94,9 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.nav-list {
   display: flex;
 }
 
@@ -93,3 +104,36 @@ ul {
   max-width: 800px;
   margin: 0 auto;
 }
+
+/*#######FORM PAGE#############*/
+
+.input-text {
+  display: block;
+  width: 80%;
+  height: 200px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+}
+
+
+.form-submit-button {
+
+}
+
+
+
+/*############Privacy Page*/
+.page-header{
+  font-family: 'Molengo', sans-serif;
+  font-weight: bold;
+  font-size: 46px;
+  margin-top: 50px;
+}
+
+
+
+
+
+
