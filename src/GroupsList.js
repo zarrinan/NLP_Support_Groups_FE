@@ -13,12 +13,12 @@ function GroupsList(props) {
   groupsArray.pop()
 
   return (
-    <div>
+    <ul>
       {
         groupsArray.map((group, i) =>
         <Group group={group} key={i}/>
         )}
-    </div>
+    </ul>
     )
 }
 

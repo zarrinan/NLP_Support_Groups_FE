@@ -45,6 +45,7 @@ class Form extends Component {
       <div>
       <div className='main-container'>
         <h1 className='page-header'>Write a text</h1>
+        <p>How are you feeling?</p>
         <form onSubmit={this.handleSubmit} >
           <textarea
             className="input-text"

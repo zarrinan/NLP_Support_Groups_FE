@@ -6,7 +6,9 @@ export default class Group extends Component {
     let groupName = Object.values(this.props.group)[0]
     console.log(groupName)
     return (
-      <div>{groupName}</div>
+
+        <li className='group-name'>{groupName}</li>
+
       )
   }
 }
