@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import GroupsList from './GroupsList'
-import {MODEL_URL, DEV_URL} from './services/api'
+import {MODEL_URL, DEV_URL, PROD_URL} from './services/api'
 
 
 class Form extends Component {
@@ -28,7 +28,7 @@ class Form extends Component {
 
   handleSubmit(ev) {
     ev.preventDefault();
-    axios.post(DEV_URL, {
+    axios.post(MODEL_URL, {
       text: this.state.text
     })
     .then(res => {
