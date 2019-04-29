@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-export default class Privacy extends Component {
+export default class Privacy extends React.Component {
   render() {
     return (
       <div>
@@ -75,9 +75,8 @@ export default class Privacy extends Component {
         <h2>Privacy Policy</h2>
         <p>If you have any questions about this Privacy Policy, please contact us via email:
         zarrina_@hotmail.com</p>
-
       </div>
       </div>
-    );
+    )
   }
 }

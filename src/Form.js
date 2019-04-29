@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react'
+import axios from 'axios'
 import GroupsList from './GroupsList'
 import {MODEL_URL, DEV_URL, PROD_URL} from './services/api'
 
 
-class Form extends Component {
+export default class Form extends React.Component {
 
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       text: '',
       groups: {}
     };
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange(ev) {
@@ -28,7 +28,7 @@ class Form extends Component {
 
   handleSubmit(ev) {
     ev.preventDefault();
-    axios.post(MODEL_URL, {
+    axios.post(PROD_URL, {
       text: this.state.text
     })
     .then(res => {
@@ -58,8 +58,6 @@ class Form extends Component {
         <GroupsList groups={this.state.groups}/>
       </div>
       </div>
-    );
+    )
   }
 }
-
-export default Form;

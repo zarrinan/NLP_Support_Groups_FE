@@ -1,15 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-export default class Group extends Component {
-
-  render() {
+export default function Group (props){
     let groupName = Object.values(this.props.group)[0]
     console.log(groupName)
     return (
-
         <li className='group-name'>{groupName}</li>
-
       )
-  }
 }
 

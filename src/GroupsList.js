@@ -1,7 +1,7 @@
-import React from 'react';
-import Group from './Group';
+import React from 'react'
+import Group from './Group'
 
-function GroupsList(props) {
+export default function GroupsList(props) {
   let obj = props.groups
   let groupsArray = []
   for (const key of Object.keys(obj)) {
@@ -9,7 +9,6 @@ function GroupsList(props) {
     myobj[key] = obj[key]
     groupsArray.push(myobj);
   }
-  console.log(groupsArray)
   groupsArray.pop()
 
   return (
@@ -22,5 +21,5 @@ function GroupsList(props) {
     )
 }
 
-export default GroupsList;
+
 

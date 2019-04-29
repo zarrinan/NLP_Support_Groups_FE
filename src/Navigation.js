@@ -1,20 +1,20 @@
-import React, {Component} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-class Navigation extends Component {
+export default class Navigation extends React.Component {
   render() {
     return (
       <div className='nav'>
-      <div className='navContainer'>
-        <ul className='nav-list'>
-          <li><Link className='link' to='/'>Home</Link></li>
-          <li><Link className='link' to='/form'>Find Support Groups</Link></li>
-          <li><Link className='link' to='/privacy'>Privacy Policy</Link></li>
-        </ul>
-      </div>
+        <div className='navContainer'>
+          <ul className='nav-list'>
+            <li><Link className='link' to='/'>Home</Link></li>
+            <li><Link className='link' to='/form'>Find Support Groups</Link></li>
+            <li><Link className='link' to='/privacy'>Privacy Policy</Link></li>
+          </ul>
+        </div>
       </div>
     )
   }
 }
 
-export default Navigation;
+
