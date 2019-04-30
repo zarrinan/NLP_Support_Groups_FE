@@ -11,7 +11,7 @@ export default class Form extends React.Component {
 
     this.state = {
       text: '',
-      groups: {}
+      groups: []
     };
 
     this.handleChange = this.handleChange.bind(this)
@@ -34,7 +34,7 @@ export default class Form extends React.Component {
     .then(res => {
       console.log(typeof res.data);
       this.setState({
-          groups: res.data
+          groups: res.data.support_groups
       })
     })
   }
