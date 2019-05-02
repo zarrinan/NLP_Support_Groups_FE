@@ -14,7 +14,7 @@ export default class Home extends React.Component {
           <ul className='contributors-list'>
             <li>- Valerie Ogonor</li>
             <li>- Rick Clayton</li>
-            <li>- Zarrina Niazova</li>
+            <li>- Zarrina Niyazova</li>
           </ul>
         </div>
       </div>
