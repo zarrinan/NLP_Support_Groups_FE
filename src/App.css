@@ -25,6 +25,7 @@ ul {
   font-weight: bold;
   font-size: 46px;
   margin-top: 50px;
+  line-height:normal;
 }
 
 .main-container {
@@ -114,14 +115,28 @@ ul {
 }
 
 .group-name {
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 0.5px;
+  margin-top: 25px;
+ /* border: solid 2px #D3D3D3;*/
+
 }
 
 .group-link {
   color: #444749;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+}
+
+.group-description {
+  margin-top: 5px;
+  width: 80%;
+}
+
+.group-subscribers {
+  margin-top: -17px;
+  font-size: 15px;
+  font-weight: 400;
 }
 /*#######HOME PAGE#####################*/
 

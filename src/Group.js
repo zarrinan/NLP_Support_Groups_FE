@@ -1,15 +1,23 @@
 import React from 'react'
+import getSubredditInfo from './services/api'
 
 export default function Group (props){
-  let url = `https://www.reddit.com/r/${props.group[0]}/`
-  console.log(url)
+  let groupName = props.group[0]
+  let reddit_url = `https://www.reddit.com/r/${groupName}/`
+
+  let reddit_description = getSubredditInfo(groupName)[1]
+  let reddit_subscribers = getSubredditInfo(groupName)[0]
+  console.log(reddit_description)
 
     return (
         <li key={props.i} className='group-name'>
-           <a className='group-link' href={url}>
-              r/{props.group[0]}
+           <a className='group-link' href={reddit_url}>
+              {groupName}
           </a>
+          <p className='group-description'>{reddit_description}</p>
+          <p className='group-subscribers'>members: <strong>{reddit_subscribers}</strong></p>
         </li>
       )
 }
+
 
