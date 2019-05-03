@@ -45,7 +45,7 @@ export default class Form extends React.Component {
       <div>
       <div className='main-container'>
         <h1 className='page-header'>Find Your Support Groups</h1>
-        <p>How are you feeling?</p>
+        <p>What's on your mind?</p>
         <form onSubmit={this.handleSubmit} >
           <textarea
             className="input-text"
