@@ -5,7 +5,7 @@ export default class Home extends React.Component {
     return (
       <div>
         <div className='main-container'>
-          <h1 className='page-header'>NLP Support Groups Finder</h1>
+          <h1 className='page-header'>Support Groups Finder</h1>
           <p>This is a Lambda School Data Science students project at the early development stage.
           The mission of the project is to help people with emotional issues to find
           support in online resources such as government support groups, support groups
