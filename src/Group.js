@@ -1,5 +1,6 @@
 import React from 'react'
 import getSubredditInfo from './services/api'
+import WordCloud from './WordCloud'
 
 export default function Group (props){
   let groupName = props.group[0]
@@ -7,7 +8,6 @@ export default function Group (props){
 
   let reddit_description = getSubredditInfo(groupName)[1]
   let reddit_subscribers = getSubredditInfo(groupName)[0]
-  console.log(reddit_description)
 
     return (
         <li key={props.i} className='group-name'>

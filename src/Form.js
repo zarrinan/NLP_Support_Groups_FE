@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import GroupsList from './GroupsList'
+import WordCloud from './WordCloud'
 import {MODEL_URL, DEV_URL, PROD_URL} from './services/api'
 
 
@@ -55,6 +56,7 @@ export default class Form extends React.Component {
             value={this.state.text}/>
           <input type="submit" value="Submit" className="form-submit-button"/>
         </form>
+        <WordCloud text={this.state.text}/>
         <GroupsList groups={this.state.groups}/>
       </div>
       </div>
