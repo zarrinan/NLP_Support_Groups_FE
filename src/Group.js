@@ -1,6 +1,5 @@
 import React from 'react'
 import getSubredditInfo from './services/api'
-import WordCloud from './WordCloud'
 
 export default function Group (props){
   let groupName = props.group[0]

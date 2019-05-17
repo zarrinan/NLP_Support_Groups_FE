@@ -1,8 +1,9 @@
 import axios from 'axios';
 
 export const MODEL_URL = 'http://nlpsgf-env.a3pandx5ib.us-east-2.elasticbeanstalk.com/';
-export const DEV_URL = 'http://127.0.0.1:5000/'
+export const DEV_URL = 'http://127.0.0.1:8080/'
 export const PROD_URL = 'https://nlpsgf-env.a3pandx5ib.us-east-2.elasticbeanstalk.com/'
+export const PROD_URL_2 = 'https://sg-env.mryhsx55ye.us-east-2.elasticbeanstalk.com/'
 
 // function checkStatus(res) {
 //   if (!res.ok) {

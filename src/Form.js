@@ -2,7 +2,8 @@ import React from 'react'
 import axios from 'axios'
 import GroupsList from './GroupsList'
 import WordCloud from './WordCloud'
-import {MODEL_URL, DEV_URL, PROD_URL} from './services/api'
+import Sentiment from './Sentiment'
+import {MODEL_URL, DEV_URL, PROD_URL, PROD_URL_2} from './services/api'
 
 
 export default class Form extends React.Component {
@@ -12,7 +13,8 @@ export default class Form extends React.Component {
 
     this.state = {
       text: '',
-      groups: []
+      groups: [],
+      sentiment: {}
     };
 
     this.handleChange = this.handleChange.bind(this)
@@ -29,34 +31,41 @@ export default class Form extends React.Component {
 
   handleSubmit(ev) {
     ev.preventDefault();
-    axios.post(PROD_URL, {
+    axios.post(PROD_URL_2, {
       text: this.state.text
     })
     .then(res => {
-      console.log(typeof res.data);
+      console.log(res.data);
       this.setState({
-          groups: res.data.support_groups
+          groups: res.data.support_groups,
+          sentiment: res.data.sentiment.sentiment
       })
     })
   }
 
   render() {
-    console.log(this.state)
     return (
       <div>
       <div className='main-container'>
         <h1 className='page-header'>Find Your Support Groups</h1>
-        <p>What's on your mind?</p>
-        <form onSubmit={this.handleSubmit} >
-          <textarea
-            className="input-text"
-            type="text"
-            name="text"
-            onChange={this.handleChange}
-            value={this.state.text}/>
-          <input type="submit" value="Submit" className="form-submit-button"/>
-        </form>
-        <WordCloud text={this.state.text}/>
+        <div className='text-input-analysis'>
+            <div className='text-input'>
+                <p>What's on your mind?</p>
+                <form onSubmit={this.handleSubmit} >
+                  <textarea
+                    className="input-text"
+                    type="text"
+                    name="text"
+                    onChange={this.handleChange}
+                    value={this.state.text}/>
+                  <input type="submit" value="Submit" className="form-submit-button"/>
+                </form>
+            </div>
+            <div className='text-analysis'>
+              <WordCloud text={this.state.text}/>
+              <Sentiment sentiment={this.state.sentiment}/>
+            </div>
+        </div>
         <GroupsList groups={this.state.groups}/>
       </div>
       </div>

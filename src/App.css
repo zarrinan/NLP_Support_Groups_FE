@@ -20,6 +20,9 @@ ul {
   padding-inline-start: 0px;
 }
 
+li {
+  list-style-type: none;
+}
 .page-header {
   font-family: 'Molengo', sans-serif;
   font-weight: bold;
@@ -30,7 +33,7 @@ ul {
 
 .main-container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 /*#######NAVIGATION HEADER#############*/
@@ -71,10 +74,48 @@ ul {
 
 /*#######FORM PAGE######################*/
 
+.text-input-analysis {
+  display: flex;
+}
+
+.text-input {
+/*  border: solid green 2px;*/
+  width: 100%;
+}
+
+.text-analysis {
+  /*padding-top: 60px;*/
+ /* border: solid red 2px;*/
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 400px;
+  padding-left: 60px;
+}
+
+.wordcloud {
+  width: 400px;
+  height: 360px;
+}
+
+.sentiment-scores {
+ /* height: 50px;*/
+/*  border: solid blue 2px;*/
+  padding-left: 40px;
+}
+
+.sens {
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  padding-right: 15px;
+  font-weight: 600;
+}
+
 .input-text {
   display: block;
-  width: 80%;
-  height: 200px;
+  width: 98%;
+  height: 300px;
   font-size: 16px;
   letter-spacing: 0.5px;
   border-radius: 2px;
@@ -84,6 +125,7 @@ ul {
   border-bottom: 2px solid;
   border-color: #af8a40;
   background-color: #fafafa;
+  padding: 10px;
 }
 
 .input-text:focus {
@@ -143,9 +185,6 @@ ul {
 
 
 /*#######PRIVACY PAGE####################*/
-
-
-
 
 
 

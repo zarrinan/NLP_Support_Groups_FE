@@ -24,7 +24,7 @@ export default function WordCloud(props) {
   console.log(final)
 
   return (
-    <div style={{ width: 600, height: 400 }}>
+    <div className='wordcloud'>
       <ReactWordcloud words={final} />
     </div>
   );
