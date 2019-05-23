@@ -36,6 +36,11 @@ li {
   max-width: 1000px;
 }
 
+.form-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 /*#######NAVIGATION HEADER#############*/
 .link {
   color: inherit;
@@ -94,14 +99,13 @@ li {
 }
 
 .wordcloud {
-  width: 400px;
-  height: 360px;
+  width: 100%;
+  height: 400px;
 }
 
 .sentiment-scores {
- /* height: 50px;*/
-/*  border: solid blue 2px;*/
   padding-left: 40px;
+  margin-top: 10px;
 }
 
 .sens {
@@ -158,6 +162,7 @@ li {
 
 .group-name {
   margin-top: 25px;
+  max-width: 750px;
  /* border: solid 2px #D3D3D3;*/
 
 
@@ -173,7 +178,6 @@ li {
 
 .group-description {
   margin-top: 5px;
-  width: 80%;
 }
 
 .group-subscribers {

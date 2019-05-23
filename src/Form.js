@@ -46,7 +46,7 @@ export default class Form extends React.Component {
   render() {
     return (
       <div>
-      <div className='main-container'>
+      <div className='form-container'>
         <h1 className='page-header'>Find Your Support Groups</h1>
         <div className='text-input-analysis'>
             <div className='text-input'>
