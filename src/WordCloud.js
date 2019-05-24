@@ -21,7 +21,8 @@ export default function WordCloud(props) {
       <ReactWordcloud
       minSize = {[400, 400]}
       options={{
-        rotationAngels: [0],
+        rotations: 1,
+        rotationAngels: [],
         colors:[
           '#721817',
           '#fa9f42',
@@ -37,9 +38,10 @@ export default function WordCloud(props) {
         fontStyle: 'normal',
         fontWeight: 'normal',
         padding: 1,
+        flex: 1,
         scale: 'sqrt',
         spiral: 'archimedean',
-        transitionDuration: 500
+        transitionDuration: 300
       }}
       words={final}
       />
