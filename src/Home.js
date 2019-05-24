@@ -12,7 +12,7 @@ export default class Home extends React.Component {
           (at a certain level of accuracy) and help medical practitioners
           to intervene and provide effective help. Based on a user's text input,
           the application recommends online support groups by leveraging Natural
-          Language Processing text classification algorithm.
+          Language Processing text classification algorithm.</p>
           <p className='home-header'><strong>What problem does this application solve?</strong></p>
           Individuals are often aware of the symptoms and/or consequences,
           but lack the ability to quantify these as a whole or seek specific treatment.
@@ -27,9 +27,9 @@ export default class Home extends React.Component {
 
 
           <p className='home-header'><strong>The project was built using</strong></p>
-          - Scikit-learn, Numpy, Pandas, NLTK, Doc2Vec, Flask, Matplotlib,
-          AWS Elastic Beanstalk, React.js, Axios, CSS, Firebase.
-          </p>
+          <p>- Scikit-learn, Numpy, Pandas, NLTK, Doc2Vec, Flask, Matplotlib,
+          AWS Elastic Beanstalk, React.js, Axios, CSS, Firebase.</p>
+
           <p className='home-header'><strong>Project contributors:</strong></p>
           <ul className='contributors-list'>
             <li>- Valerie Ogonor</li>

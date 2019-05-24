@@ -8,13 +8,13 @@ export default function WordCloud(props) {
   let by_word = text.trim().split(' ')
   for (let i = 0; i < by_word.length; i++) {
       let word = by_word[i].toLowerCase();
-      if (word != 'the' && word != 'a'){
+      if (word !== 'the' && word !== 'a'){
       result[word] = result[word] ? result[word] + 1 : 1;
   }}
   for (const key of Object.keys(result)) {
     final.push({text: key, value: result[key] })
   }
-  console.log(final)
+  // console.log(final)
 
   return (
     <div className='wordcloud'>

@@ -5,20 +5,6 @@ export const DEV_URL = 'http://127.0.0.1:8080/'
 export const PROD_URL = 'https://nlpsgf-env.a3pandx5ib.us-east-2.elasticbeanstalk.com/'
 export const PROD_URL_2 = 'https://sg-env.mryhsx55ye.us-east-2.elasticbeanstalk.com/'
 
-// function checkStatus(res) {
-//   if (!res.ok) {
-//     throw new Error(res.statusText);
-//   }
-//   return res.json();
-// }
-
-// export default function fetchGroups() {
-//   return axios.get(`${MODEL_URL}`)
-//     .then(checkStatus)
-//     .then(res => res.json())
-//     .then(json => console.log(json))
-// }
-
 
 export function fetchGroups() {
     axios.get(MODEL_URL)

@@ -35,7 +35,7 @@ export default class Form extends React.Component {
       text: this.state.text
     })
     .then(res => {
-      console.log(res.data);
+      // console.log(res.data);
       this.setState({
           groups: res.data.support_groups,
           sentiment: res.data.sentiment.sentiment
