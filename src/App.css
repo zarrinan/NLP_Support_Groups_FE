@@ -33,7 +33,7 @@ li {
 
 .main-container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 850px;
 }
 
 .form-container {
@@ -186,7 +186,18 @@ li {
   font-weight: 400;
 }
 /*#######HOME PAGE#####################*/
+.home-header {
+  margin-bottom: 5px;
+}
 
+.contributors-list {
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.note {
+  font-size: 14px;
+}
 
 /*#######PRIVACY PAGE####################*/
 
