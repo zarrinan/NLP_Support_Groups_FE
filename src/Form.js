@@ -14,7 +14,8 @@ export default class Form extends React.Component {
     this.state = {
       text: '',
       groups: [],
-      sentiment: {}
+      sentiment: {},
+      loading: true
     };
 
     this.handleChange = this.handleChange.bind(this)
@@ -31,19 +32,29 @@ export default class Form extends React.Component {
 
   handleSubmit(ev) {
     ev.preventDefault();
+    this.setState({
+      loading: true
+    })
     axios.post(PROD_URL_2, {
       text: this.state.text
     })
     .then(res => {
-      // console.log(res.data);
       this.setState({
           groups: res.data.support_groups,
-          sentiment: res.data.sentiment.sentiment
+          sentiment: res.data.sentiment.sentiment,
+          loading: false
       })
     })
   }
 
   render() {
+    let data;
+    if (this.state.loading) {
+        data = <div></div>
+      }
+    else {
+      data =   <WordCloud text={this.state.text}/>
+    }
     return (
       <div>
       <div className='form-container'>
@@ -62,7 +73,7 @@ export default class Form extends React.Component {
                 </form>
             </div>
             <div className='text-analysis'>
-              <WordCloud text={this.state.text}/>
+             {data}
               <Sentiment sentiment={this.state.sentiment}/>
             </div>
         </div>
