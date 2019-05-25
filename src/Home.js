@@ -22,7 +22,7 @@ export default class Home extends React.Component {
           <p className='home-header'><strong>Features include:</strong></p>
 
           <li>- Recommendation of online support groups relevant to a user based on their text input.</li>
-          <li>- Sentiment analysis of a user’s text</li>
+          <li>- Sentiment analysis of a user’s text input.</li>
           <li>- Word cloud of a user’s text input.</li>
 
 
