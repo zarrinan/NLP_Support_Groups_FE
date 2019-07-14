@@ -3,7 +3,7 @@ import axios from 'axios'
 import GroupsList from './GroupsList'
 import WordCloud from './WordCloud'
 import Sentiment from './Sentiment'
-import {MODEL_URL, DEV_URL, PROD_URL, PROD_URL_2} from './services/api'
+import {MODEL_URL, DEV_URL, PROD_URL} from './services/api'
 
 
 export default class Form extends React.Component {
@@ -35,7 +35,7 @@ export default class Form extends React.Component {
     this.setState({
       loading: true
     })
-    axios.post(PROD_URL_2, {
+    axios.post(PROD_URL, {
       text: this.state.text
     })
     .then(res => {
