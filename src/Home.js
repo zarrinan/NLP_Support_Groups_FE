@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default class Home extends React.Component {
-  render() {
+export default function Home () {
+
     return (
       <div>
         <div className='main-container'>
@@ -45,5 +45,4 @@ export default class Home extends React.Component {
         </div>
       </div>
     )
-  }
 }

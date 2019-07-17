@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default class Privacy extends React.Component {
-  render() {
+export default function Privacy () {
+
     return (
       <div>
         <div className='main-container'>
@@ -77,5 +77,4 @@ export default class Privacy extends React.Component {
         </div>
       </div>
     )
-  }
 }

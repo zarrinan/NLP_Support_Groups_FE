@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default class Navigation extends React.Component {
-  render() {
+export default function Navigation () {
+
     return (
       <div className='nav'>
         <div className='navContainer'>
@@ -14,7 +14,7 @@ export default class Navigation extends React.Component {
         </div>
       </div>
     )
-  }
+
 }
 
 
